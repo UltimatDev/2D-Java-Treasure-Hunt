@@ -1,4 +1,5 @@
 package main;
+import object.OBJ_boot;
 import object.OBJ_chest;
 import object.OBJ_door;
 import object.OBJ_key;
@@ -40,7 +41,11 @@ public class AssetPlacer {
 		gp.obj[6].worldX = 10 * gp.tileSize;
 		gp.obj[6].worldY = 7  * gp.tileSize;
 		
+		gp.obj[7] = new OBJ_boot();
+		gp.obj[7].worldX = 37 * gp.tileSize;
+		gp.obj[7].worldY = 42  * gp.tileSize;
 		
+
 		
 		
 	}

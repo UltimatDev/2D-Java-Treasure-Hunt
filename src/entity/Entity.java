@@ -10,7 +10,10 @@ public class Entity {
 	public BufferedImage up,down, left, right;
 	public String direction;
 	
+	public int spriteCounter = 0;
+	public int spriteNum = 1;
 	
 	public Rectangle solidArea;
+	public int solidAreaDefaultX, solidAreaDefaultY;
 	public boolean collisionOn = false;
 }

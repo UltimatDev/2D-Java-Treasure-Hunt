@@ -1,4 +1,4 @@
-# 2D Java Treasure Hunt
+# 2D Java Game #1
 
 A 2D adventure game built using Java to explore core Object-Oriented Programming concepts and game development fundamentals.
 
