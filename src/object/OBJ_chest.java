@@ -4,18 +4,15 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class OBJ_key extends SuperObject {
-	public OBJ_key() {
+public class OBJ_chest extends SuperObject {
+	public OBJ_chest() {
 		 name = "Key";
 		 try {
-			 image = ImageIO.read(getClass().getResourceAsStream("/objects/key.png"));
+			 image = ImageIO.read(getClass().getResourceAsStream("/objects/chest.png"));
 			
 		 }
 		 catch(IOException e) {
 			 e.printStackTrace();
 		 }
-	}
-	
-	
-	
 }
+	}
