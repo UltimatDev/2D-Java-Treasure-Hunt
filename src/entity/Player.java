@@ -112,6 +112,7 @@ public class Player extends Entity{
 				gp.playSE(1);
 				hasKey++;
 				gp.obj[index] = null;
+				gp.ui.showMessage("Key Picked Up!!");
 				break;
 			
 			case "Door":
@@ -120,12 +121,12 @@ public class Player extends Entity{
 
 					gp.obj[index] = null;
 					hasKey--;
-					
+					gp.ui.showMessage("Door Unlocked");
 				}
 				break;
 			case "Boots":
 				gp.playSE(2);
-
+				gp.ui.showMessage("Powered Up");
 				speed+=2;
 				gp.obj[index] =null;
 				break;
@@ -134,6 +135,7 @@ public class Player extends Entity{
 			case "Chest":
 				gp.stopMusic();
 				gp.playSE(4);
+				gp.ui.gameFinished = true;
 				gp.obj[index] = null;
 				break;
 		}
